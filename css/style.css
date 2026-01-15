@@ -136,40 +136,38 @@ section {
 
 @media (max-width: 760px){
     .header{
-        padding: 0 16px;      
-        height: 64px;         
+        padding: 0 16px;
+        height: 64px;
     }
-
 
     .nav-toggle{
         display: block;
     }
+
     .nav{
         position: fixed;
-        top: 64px;            
+        top: 64px;
         left: 0;
         right: 0;
         background: rgba(26,26,26,0.95);
         backdrop-filter: blur(10px);
-        transform: translateY(-120%);
-        transition: transform 0.25s ease;
         z-index: 999;
         padding: 16px 0;
     }
 
     .nav__list{
+        display: none;
         flex-direction: column;
         gap: 14px;
         align-items: center;
     }
 
-    .nav a{
-        font-size: 16px;
+    .header.nav-open .nav__list{
+        display: flex;
     }
 
-
-    .header.nav-open .nav{
-        transform: translateY(0);
+    .nav a{
+        font-size: 16px;
     }
 }
 
