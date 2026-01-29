@@ -1698,4 +1698,27 @@ body.is-modal-open {
   }
 }
 
+.footer__top{
+  position: static !important;
+  inset: auto !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+}
 
+@media (max-width: 700px){
+  .footer .container{ padding-left:16px; padding-right:16px; }
+
+  .footer__inner{
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .footer__top{
+    width: 100%;
+    margin-top: 14px !important;
+    display: inline-flex;
+    justify-content: center;
+  }
+}
